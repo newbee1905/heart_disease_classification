@@ -1,0 +1,52 @@
+[project]
+name = "heart-disease-classification"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "catboost>=1.2.8",
+    "configspace>=1.2.1",
+    "cucim-cu12==25.4.*",
+    "cudf-cu12==25.4.*",
+    "cugraph-cu12==25.4.*",
+    "cuml-cu12==25.4.*",
+    "cuproj-cu12==25.4.*",
+    "cuspatial-cu12==25.4.*",
+    "cuvs-cu12==25.4.*",
+    "cuxfilter-cu12==25.4.*",
+    "dask-cudf-cu12==25.4.*",
+    "hpbandster>=0.7.4",
+    "imblearn>=0.0",
+    "imgkit>=1.2.3",
+    "ipykernel>=6.29.5",
+    "ipywidgets>=8.1.7",
+    "joblib>=1.5.1",
+    "lightgbm>=4.6.0",
+    "matplotlib>=3.10.3",
+    "numba>=0.60.0",
+    "numpy>=2.0.2",
+    "nx-cugraph-cu12==25.4.*",
+    "optuna>=4.3.0",
+    "pandas>=2.2.3",
+    "plotly>=6.1.2",
+    "pylibraft-cu12==25.4.*",
+    "raft-dask-cu12==25.4.*",
+    "ray>=2.46.0",
+    "requests>=2.32.3",
+    "scikit-learn>=1.6.1",
+    "scikit-optimize[plots]>=0.10.2",
+    "seaborn>=0.13.2",
+    "tabpfn>=2.0.9",
+    "tabpfn-extensions[all]",
+    "torch>=2.7.0",
+    "tqdm>=4.67.1",
+    "xgboost>=3.0.1",
+    "ydata-profiling>=4.12.2",
+]
+
+[[tool.uv.index]]
+url = "https://pypi.nvidia.com/"
+
+[tool.uv.sources]
+tabpfn-extensions = { git = "https://github.com/PriorLabs/tabpfn-extensions.git" }
