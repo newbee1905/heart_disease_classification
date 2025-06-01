@@ -584,7 +584,7 @@ if __name__ == '__main__':
 	]
 
 	if not args.data_leak:
-		X_train, X_test, y_train, y_test = train_test_split(X_proc, y, test_size=0.2, random_state=RANDOM_STATE, stratify=y)
+		X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=RANDOM_STATE, stratify=y)
 
 		X_train_num_imp = pd.DataFrame(
 			num_imputer.fit_transform(X_train[num_cols]), columns=num_cols
